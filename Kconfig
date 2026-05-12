@@ -22,6 +22,11 @@ config PROSPECTOR_STATUS_SCREEN_OPERATOR
     help
         Technical and information dense layout
 
+config PROSPECTOR_STATUS_SCREEN_BRIEFING
+    bool "Briefing layout"
+    help
+        Sci-fi briefing console layout with planet and orbiting moons
+
 endchoice
 
 config PROSPECTOR_ROTATE_DISPLAY_180
