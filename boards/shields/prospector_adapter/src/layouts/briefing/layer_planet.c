@@ -45,7 +45,7 @@ static void update_planet_phase(struct zmk_widget_layer_planet *w) {
     }
 
     int shadow_offset = PLANET_R - (avg * PLANET_R / 100);
-    position_circle(w->shadow, PLANET_CX + shadow_offset, PLANET_CY, PLANET_R);
+    lv_obj_set_pos(w->shadow, shadow_offset, 0);
 }
 
 static void update_orbits(struct zmk_widget_layer_planet *w) {
